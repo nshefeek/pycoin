@@ -1,7 +1,10 @@
 from rest_framework import serializers
-from .models import Entry
+from .models import Quote
 
-class EntrySerializer(serializers.ModelSerializer):
+class QuoteSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Entry
-        fields = "__all__"
+        model = Quote
+        fields = (
+                "from_currency",
+                "to_currency",
+                )

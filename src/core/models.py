@@ -9,4 +9,4 @@ class Quote(models.Model):
     updated = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.id}-{self.last_refreshed}.strftime('%H:%M-%d/%m/%y')"
+        return f"Quote-{self.id}-{self.last_refreshed.strftime('%d/%m/%y-%H:%M:%S')}"
