@@ -5,6 +5,5 @@ class QuoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Quote
         fields = (
-                "from_currency",
-                "to_currency",
-                )
+            "from_currency", "to_currency", "exchange",
+        )
